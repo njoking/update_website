@@ -1,0 +1,499 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif; /* Set font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    background-color: #f5f5f5; /* Set background color */
+}
+
+/* Header styles */
+header {
+    background-color: #118893; /* Set background color */
+    color: rgb(43, 4, 56); /* Set text color */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Add padding */
+}
+
+/* Main navigation styles */
+nav {
+    margin-top: 20px; /* Add space above navigation */
+}
+
+/* Unordered list styles for navigation */
+nav ul {
+    list-style: none; /* Remove default list styles */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* List item styles for navigation */
+nav li {
+    display: inline; /* Display list items inline */
+    margin-right: 20px; /* Add space between list items */
+}
+
+/* Link styles for navigation */
+nav a {
+    text-decoration: none; /* Remove default underline */
+    color: white; /* Set link color */
+    font-weight: bold; /* Set font weight */
+    font-size: 1.2rem; /* Set font size */
+    position: relative; /* Positioning context for pseudo-elements */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Link hover styles for navigation */
+nav a:hover {
+    color: #FFD700; /* Change text color on hover */
+}
+
+/* Pseudo-element styles for navigation link hover effect */
+nav a:hover::before {
+    content: ""; /* Add pseudo-element */
+    position: absolute; /* Positioning relative to the parent */
+    bottom: -3px; /* Position relative to bottom */
+    left: 0; /* Position relative to left */
+    width: 100%; /* Full width */
+    height: 2px; /* Height of the line */
+    background-color: #951515; /* Line color */
+}
+
+/* Main content styles */
+.main-content {
+    max-width: 800px; /* Set maximum width */
+    margin: 20px auto; /* Center align and add space around */
+    padding: 20px; /* Add padding */
+}
+
+/* Subheading styles */
+.main-content h2 {
+    text-align: center; /* Center align text */
+    font-size: 3em; /* Set font size */
+    font-weight: bold; /* Set font weight */
+    color: #333; /* Set text color */
+    margin-top: 50px; /* Add space above */
+    margin-bottom: 30px; /* Add space below */
+}
+
+/* Home banner image styles */
+.home-banner img {
+    max-width: 100%; /* Set maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add border radius */
+    margin-bottom: 20px; /* Add space below */
+}
+
+/* Container for home details */
+.home-details {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-around; /* Distribute items evenly */
+    align-items: center; /* Center align items vertically */
+    flex-wrap: wrap; /* Allow wrapping */
+    width: 100%; /* Full width */
+}
+
+/* Video container styles */
+.video-container {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
+    height: 60vh; /* Set height */
+}
+
+/* Video iframe styles */
+.video-container iframe {
+    width: 80%; /* Set width */
+    height: 80%; /* Set height */
+}
+
+/* Popup styles */
+.video-popup {
+    display: none; /* Hide popup by default */
+    position: fixed; /* Position fixed */
+    z-index: 9999; /* Set z-index */
+    top: 0; /* Position from top */
+    left: 0; /* Position from left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+/* Popup content styles */
+.video-popup-content {
+    position: absolute; /* Position absolute */
+    top: 50%; /* Position from top */
+    left: 50%; /* Position from left */
+    transform: translate(-50%, -50%); /* Center align */
+    background-color: #fff; /* Set background color */
+    padding: 20px; /* Add padding */
+}
+
+/* Close button styles */
+.video-popup-content .close-btn {
+    position: absolute; /* Position absolute */
+    top: 10px; /* Position from top */
+    right: 10px; /* Position from right */
+    cursor: pointer; /* Set cursor to pointer */
+}
+
+
+/* Product styles */
+.product {
+    flex: 1; /* Flex-grow set to 1 for flexible sizing */
+    margin: 0 10px; /* Margin on left and right sides */
+    text-align: center; /* Center align text */
+    background-color: #f5f5f5; /* Set background color */
+    padding: 15px; /* Add padding */
+    border-radius: 8px; /* Add border radius */
+    margin-bottom: 20px; /* Add space below */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Product image styles */
+.product img {
+    max-width: 100%; /* Set maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add border radius */
+    margin-bottom: 10px; /* Add space below */
+}
+
+/* Business content styles */
+.business-content {
+    max-width: 800px; /* Set maximum width */
+    margin: 20px auto; /* Center align and add space around */
+    padding: 20px; /* Add padding */
+}
+
+/* Details section styles */
+.details-section {
+    background-color: #87CEEB; /* Set background color */
+    border-radius: 8px; /* Add border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    padding: 20px; /* Add padding */
+    margin-bottom: 20px; /* Add space below */
+}
+
+/* Heading styles within details section */
+.details-section h3 {
+    color: #333; /* Set text color */
+}
+
+/* Image styles within details section */
+.details-section img {
+    max-width: 100%; /* Set maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add border radius */
+    margin-bottom: 10px; /* Add space below */
+}
+
+/* Paragraph styles within details section */
+.details-section p {
+    margin-top: 0; /* Remove top margin */
+    line-height: 1.6; /* Set line height */
+}
+
+/* About details section styles */
+.about-details {
+    background-color: #2f7633; /* Set background color */
+    border-radius: 8px; /* Add border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    padding: 20px; /* Add padding */
+    margin-top: 20px; /* Add space above */
+}
+
+/* Image styles within about details section */
+.about-details img {
+    max-width: 100%; /* Set maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add border radius */
+    margin-bottom: 20px; /* Add space below */
+}
+
+/* Paragraph styles within about details section */
+.about-details p {
+    line-height: 1.6; /* Set line height */
+}
+
+/* Heading styles within about details section */
+.about-details h3 {
+    color: #333; /* Set text color */
+    margin-bottom: 10px; /* Add space below */
+}
+
+/* Contact form styles */
+.contact-form {
+    margin-top: 20px; /* Add space above the contact form */
+}
+
+/* Form styles within contact form */
+.contact-form form {
+    display: grid; /* Use grid layout */
+    grid-gap: 10px; /* Set gap between grid items */
+}
+
+/* Label styles within contact form */
+.contact-form label {
+    font-weight: bold; /* Set font weight to bold */
+}
+
+/* Input and textarea styles within contact form */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%; /* Set width to 100% */
+    padding: 8px; /* Add padding */
+    border: 1px solid #ccc; /* Set border */
+    border-radius: 4px; /* Add border radius */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Textarea specific styles within contact form */
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Submit button styles within contact form */
+.contact-form button[type="submit"] {
+    background-color: #a881cd; /* Set background color */
+    color: white; /* Set text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Set cursor to pointer */
+}
+
+/* Hover styles for submit button within contact form */
+.contact-form button[type="submit"]:hover {
+    background-color: #45a049; /* Change background color on hover */
+}
+
+/* Customer review section styles */
+.customer-review {
+    margin-top: 20px; /* Add space above the customer review section */
+    border-top: 1px solid #ccc; /* Add top border */
+    padding-top: 20px; /* Add padding at the top */
+}
+
+/* Paragraph styles within customer review section */
+.customer-review p {
+    font-style: italic; /* Set font style to italic */
+}
+
+/* Review section styles */
+.review-section {
+    position: relative; /* Set position to relative */
+    z-index: 1; /* Set z-index */
+    background-color: #498d5e; /* Set background color */
+    padding: 20px; /* Add padding */
+}
+
+/* Input styles within review form */
+.review-form input[type="text"],
+.review-form input[type="email"] {
+    width: 100%; /* Set width to 100% */
+    padding: 10px; /* Add padding */
+    border: 1px solid #ccc; /* Set border */
+    border-radius: 4px; /* Add border radius */
+    margin-bottom: 10px; /* Add space below */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Submit button styles within review form */
+.review-form button[type="submit"] {
+    background-color: aqua; /* Set background color */
+    color: white; /* Set text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Set cursor to pointer */
+    position: absolute; /* Set position to absolute */
+    bottom: 10px; /* Set distance from the bottom */
+    right: 10px; /* Set distance from the right */
+}
+
+
+
+/* Products table styles */
+.products-table {
+    width: 100%; /* Set table width to 100% */
+    border-collapse: collapse; /* Collapse borders between table cells */
+}
+
+/* Header cells and data cells within products table */
+.products-table th, 
+.products-table td {
+    border: 1px solid #ddd; /* Add border */
+    padding: 8px; /* Add padding */
+    text-align: left; /* Align text to the left */
+}
+
+/* Header cells within products table */
+.products-table th {
+    background-color: #f2f2f2; /* Set background color */
+}
+
+/* Even rows within products table body */
+.products-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Set background color */
+}
+
+/* Hover effect for rows within products table */
+.products-table tbody tr:hover {
+    background-color: #f2f2f2; /* Change background color on hover */
+}
+
+/* Footer styles */
+.footer {
+    background-color: rgb(227, 201, 252); /* Set background color */
+    color: black; /* Set text color */
+    text-align: center; /* Align text to the center */
+    padding: 1px 0; /* Add padding */
+    position: relative; /* Set position to relative */
+    bottom: 0; /* Set position to bottom */
+    left: 0; /* Set position to left */
+    right: 0; /* Set position to right */
+    width: 100%; /* Set width to 100% */
+    z-index: 0; /* Set z-index */
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.social-media {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Side menu styles */
+.side-menu {
+    position: fixed; /* Set position to fixed */
+    top: 0; /* Set position to top */
+    left: -300px; /* Hide side menu by default */
+    width: 250px; /* Set width */
+    height: 100%; /* Set height */
+    background-color: yellow; /* Set background color */
+    padding: 20px; /* Add padding */
+    transition: left 0.3s; /* Add transition effect */
+    text-align: left; /* Align text to the left */
+    line-height: 50px; /* Set line height */
+}
+
+/* List styles within side menu */
+.side-menu ul {
+    list-style-type: none; /* Remove list bullets */
+}
+
+/* List items within side menu */
+.side-menu ul li {
+    margin-bottom: 10px; /* Add margin at the bottom */
+}
+
+/* Links within list items in side menu */
+.side-menu ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Set text color */
+    font-weight: bold; /* Set font weight to bold */
+}
+
+/* Hover effect for links within side menu */
+.side-menu ul li a:hover {
+    color: #ff6347; /* Change text color on hover */
+}
+
+/* Add arrow icon before list items in side menu */
+.side-menu ul li::before {
+    content: '\25B6'; /* Add arrow icon */
+    margin-right: 10px; /* Add margin */
+}
+
+
+
+/* Menu button styles */
+#menu-btn {
+    position: fixed; /* Set position to fixed */
+    top: 20px; /* Set position from top */
+    right: 20px; /* Set position from right */
+    z-index: 1000; /* Set z-index */
+    padding: 10px; /* Add padding */
+    background-color: transparent; /* Set background color to transparent */
+    cursor: pointer; /* Set cursor to pointer */
+}
+
+/* Hover effect for menu button */
+#menu-btn:hover {
+    background-color: pink; /* Change background color on hover */
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    header {
+        padding: 10px; /* Reduce padding */
+    }
+
+    nav {
+        text-align: center; /* Center-align navigation */
+    }
+
+    nav ul {
+        display: block; /* Display list items vertically */
+        margin-bottom: 10px; /* Add margin at the bottom */
+    }
+
+    nav li {
+        display: block; /* Display list items vertically */
+        margin: 10px 0; /* Add margin */
+    }
+
+    /* Adjust side menu width */
+    .side-menu {
+        width: 200px; /* Set width */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Adjustments for smaller screens */
+    .home-details {
+        flex-direction: column; /* Stack elements vertically */
+        align-items:center; /* Center-align items */
+    }
+
+    .product {
+        margin-bottom: 20px; /* Add margin at the bottom */
+        width:100%; /* Set width to 100% */
+    }
+    
+    .about-details {
+        text-align: center;
+    }
+    .business-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-details {
+        padding: 10px; /* Add padding */
+    }
+
+    /* Adjust side menu width and padding */
+    .side-menu {
+        width: 150px; /* Set width */
+        padding: 10px; /* Add padding */
+    }
+}
